@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 *{
   font-family: 'Jost', sans-serif !important;
-  background: #223033;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background: #223033;
+}
 
 .box {
   position: relative;
@@ -50,11 +55,11 @@
   position: absolute;
   inset: 4px;
   border-radius: 8px;
-  /* background: #28292d;  */
   z-index: 10;
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
+  background: #223033;
 }
 
 .form h2 {
@@ -186,7 +191,7 @@ p{
   position: relative;
   width: 400px;
   margin-top: 35px;
-
+  /* background: #223033; */
 }
 
 .inputBox input {
@@ -202,7 +207,8 @@ p{
   z-index: 10;
   text-transform: none;
   font-weight: 500;
-  background-color: #28292d !important;
+  /* background-color: #28292d !important; */
+  /* background: #223033; */
 }
 
 .links {
@@ -229,13 +235,13 @@ p{
 .BookNow {
   align-items: center;
   appearance: none;
-  /* background-color: #60dfac; */
+  background-color: #164a156b;
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #60df82ca 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #16a049;
+  color: #fff;
   cursor: pointer;
   display: inline-flex;
   height: 48px;
@@ -269,20 +275,21 @@ p{
 }
 
 .BookNow:hover {
-  color: rgb(16, 125, 6);
+  color: rgb(248, 255, 247);
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #60df7bca 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
 .BookNow:active {
-  color: #a01616;
+  color: #1652a0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #a01616 0 -3px 0 inset;
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #1652a0 0 -3px 0 inset;
   transform: translateY(2px);
 }
 .bgnone {
   background: none;
+  
 }
 
 /* antd override */
@@ -290,23 +297,23 @@ input{
   border-radius: 112px !important;
   border: 1px solid rgba(128, 128, 128, 0.521) !important;
   height: 40px !important;
-  background: #28292d !important;
   padding: 20px !important;
 }
 input:focus , .ant-picker{
   outline: none !important;
   box-shadow: none !important;
-  border: 1px solid gray !important;
+  border: 1px solid rgb(0, 255, 76) !important;
   background-color: none;
 }
 label{
   font-size: 20px !important;
   color: rgb(255, 255, 255) !important;
-  /* background: #28292d !important; */
+  background: #223033 !important;
+
 }
 .ant-form-item{
   margin: 10px 0 !important;
-  background: #28292d !important;
+  background: none !important;
 }
 .ant-picker-input input{
   border: none !important;

@@ -1,21 +1,51 @@
 import { Button, Form, Input } from "antd";
 import React from "react";
 import styles from "./login.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-hot-toast";
 const Login = () => {
-  const onFinish = (values) => {
-    console.log(`Recvied values of From:`, values);
- }  
+  const navigate = useNavigate();
+  const onFinish = async (values) => {
+    try {
+      const response = await axios.post("/api/user/login", values);
+      if (response.data.success) {
+        toast(response.data.message, {
+          icon: "😊",
+          style: {
+            borderRadius: "10px",
+            background: "#223033",
+            color: "#fff",
+          },
+        });
+        localStorage.setItem("token", response.data.data);
+        navigate("/home");
+      } else {
+        toast(response.data.message, {
+          icon: "😢",
+          style: {
+            borderRadius: "10px",
+            background: "#b8291f",
+            color: "#fff",
+          },
+        });
+      }
+    } catch (error) {
+      toast("Something went wrong", {
+        icon: "🤔😑",
+        style: {
+          borderRadius: "10px",
+          background: "#787775",
+          color: "#fff",
+        },
+      });
+    }
+  };
   return (
     <>
       <div className={styles.loginContainer}>
         <div className={styles.right}>
-          <img
-            src="/assets/login.svg"
-            alt="login image"
-            height="500"
-            width="500"
-          />
+          <img src="/assets/login.svg" alt="login" height="500" width="500" />
         </div>
         <div className={styles.left}>
           <div className="box">

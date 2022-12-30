@@ -1,21 +1,25 @@
-import React from 'react';
-import {BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './pages/UserSignup/Login';
-import Register from './pages/UserSignup/Register';
-import Home from './pages/Home/Home';
-import Navigation from './pages/Navigation/Navigation';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/UserSignup/Login";
+import Register from "./pages/UserSignup/Register";
+import Navigation from "./pages/Navigation/Navigation";
+import { Toaster } from "react-hot-toast";
+import Landing from "./pages/LandingPage/Landing";
+import Home from "./pages/Home";
 function App() {
   return (
-    <div className="App">
-     <BrowserRouter>
-      <Navigation/>
+    <>
+      <BrowserRouter>
+      <Toaster position="top-center" reverseOrder={false} />
+        <Navigation />  
         <Routes>
-          <Route path='/'  element={<Home/>} exact/>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/register' element={<Register/>}/>
-        </Routes>
-     </BrowserRouter>
-    </div>
+          <Route path="/" element={<Landing />} exact />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>  
+      </BrowserRouter>
+    </>
   );
 }
 

@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
-const Home = () => {
+const Landing = () => {
   return (
     <div className='container d-flex  p-2 justify-content-center align-items-center'>
       <div className={styles.left}>
-        <img src="assets/home-img.svg" alt="Home image" draggable="false" />
+        <img src="assets/home-img.svg" alt="Home" draggable="false" />
       </div>
       <div className={styles.right}>
         <h3 className="fs-1 lh-2">Eki tho life hai, check up karalo</h3>
@@ -25,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Landing;
