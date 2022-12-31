@@ -4,11 +4,17 @@ import styles from "./register.module.css";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { hideLoading, showLoading } from "../../redux/alertsSlice";
+
 const Register = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const onFinish = async (values) => {
     try {
+      dispatch(showLoading());
       const response = await axios.post("/api/user/register", values);
+      dispatch(hideLoading());
       if (response.data.success) {
         toast(response.data.message, {
           icon: "😊",
@@ -30,6 +36,7 @@ const Register = () => {
         });
       }
     } catch (error) {
+      dispatch(hideLoading());
       toast("Something went wrong", {
         icon: "🤔😑",
         style: {
