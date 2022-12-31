@@ -22,7 +22,7 @@ function App() {
         <Toaster position="top-center" reverseOrder={false} />
         <Navigation />
         <Routes>
-          {/* <Route path="/" element={<Landing />} exact /> */}
+          {/* <Route path="/" element={<Landing />}  /> */}
           <Route
             path="/login"
             element={
