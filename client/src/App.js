@@ -4,12 +4,13 @@ import Login from "./pages/UserSignup/Login";
 import Register from "./pages/UserSignup/Register";
 import Navigation from "./pages/Navigation/Navigation";
 import { Toaster } from "react-hot-toast";
-import Landing from "./pages/LandingPage/Landing";
+// import Landing from "./pages/LandingPage/Landing";
 import Home from "./pages/Home";
 import { useSelector } from "react-redux";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
 import ApplyDoctor from "./pages/ApplyDoctor";
+import Notifications from "./pages/Notifications";
 function App() {
   const { loading } = useSelector((state) => state.alerts);
   return (
@@ -56,6 +57,14 @@ function App() {
               </ProtectedRoute>
             }
           />
+           <Route
+          path="/notifications"
+          element={
+            <ProtectedRoute>
+              <Notifications />
+            </ProtectedRoute>
+          }
+        />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../layout.css";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
     {
       name: "Profile",
       path: "/apply-doctor",
-      icon: "ri-user-2-fill",
+      icon: "ri-account-circle-fill",
     },
     {
       name: "Logout",
@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
     {
       name: "Profile",
       path: `/doctor/profile/${user?._id}`,
-      icon: "ri-user-2-fill",
+      icon: "ri-account-circle-fill",
     },
   ];
 
@@ -57,12 +57,12 @@ const Layout = ({ children }) => {
     {
       name: "Home",
       path: "/",
-      icon: "ri-home-heart-line",
+      icon: "ri-ancient-gate-fill",
     },
     {
       name: "Users",
       path: "/admin/userslist",
-      icon: "ri-user-line",
+      icon: "ri-team-fill",
     },
     {
       name: "Doctors",
@@ -72,7 +72,7 @@ const Layout = ({ children }) => {
     {
       name: "Profile",
       path: "/profile",
-      icon: "ri-user-2-fill",
+      icon: "ri-account-circle-fill",
     },
   ];
 
@@ -128,7 +128,10 @@ const Layout = ({ children }) => {
           <div className="header">
             <div></div>
             <div className="d-flex jus layout-action-icon">
-              <Badge count={user?.unseenNotifications.length}>
+              <Badge
+                count={user?.unseenNotifications.length}
+                onClick={() => navigate("/notifications")}
+              >
                 <i className="ri-notification-3-fill notification "></i>
               </Badge>
               <Link className="user" to="/profile">
