@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../layout.css";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { Badge } from "antd";
 const Layout = ({ children }) => {
   const { user } = useSelector((state) => state.user);
   const navigate = useNavigate();
@@ -16,11 +17,6 @@ const Layout = ({ children }) => {
       name: "Appointments",
       path: "/appointments",
       icon: "ri-file-list-3-line",
-    },
-    {
-      name: "Apply Doctor",
-      path: "/apply-doctor",
-      icon: "ri-hospital-fill",
     },
     {
       name: "Profile",
@@ -43,7 +39,12 @@ const Layout = ({ children }) => {
     {
       name: "Appointments",
       path: "/doctor/appointments",
-      icon: "ri-file-list-line",
+      icon: "ri-file-list-3-line",
+    },
+    {
+      name: "Apply Doctor",
+      path: "/apply-doctor",
+      icon: "ri-send-plane-fill",
     },
     {
       name: "Profile",
@@ -104,17 +105,17 @@ const Layout = ({ children }) => {
                   </li>
                 );
               })}
-              <li className='list'>
+              <li className="list">
                 <NavLink
                   className="a"
-                  to='/login'
+                  to="/login"
                   onClick={() => {
                     localStorage.clear();
                     navigate("/login");
                   }}
                 >
                   <span className="icon">
-                    <i className='ri-logout-box-r-line'></i>
+                    <i className="ri-logout-box-r-line"></i>
                   </span>
                   <span className="title">Logout</span>
                 </NavLink>
@@ -127,7 +128,9 @@ const Layout = ({ children }) => {
           <div className="header">
             <div></div>
             <div className="d-flex jus layout-action-icon">
-              <i className="ri-notification-3-fill notification "></i>
+              <Badge count={user?.unseenNotifications.length}>
+                <i className="ri-notification-3-fill notification "></i>
+              </Badge>
               <Link className="user" to="/profile">
                 {user?.name}
               </Link>

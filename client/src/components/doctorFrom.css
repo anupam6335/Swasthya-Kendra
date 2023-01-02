@@ -1,0 +1,144 @@
+.ant-form-item {
+  margin: 10px 0 !important;
+  background: none !important;
+}
+.ant-picker-input input {
+  border: none !important;
+}
+.ant-picker {
+  border-radius: 2px !important;
+  border: 1px solid rgba(128, 128, 128, 0.521) !important;
+  height: 40px !important;
+}
+
+.form-details {
+  /* background: #000000; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.formInput {
+  margin: 10px 0 12px 0;
+  width: calc(100% / 2 -20px);
+}
+.inputDoc {
+  width: 45vh;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    text-align: center;
+}
+
+.inputDocs {
+    width: 35vh;
+}
+
+.inputDoc:active,
+.inputDoc:focus,
+.ant-picker {
+  border: 1px solid rgb(0, 0, 0) !important;
+}
+
+.labelDetails {
+  display: block;
+  color: #143b89;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.experience {
+  margin-left: -15px;
+  text-align: center;
+}
+.fee {
+    margin-right: -10px;
+    text-align: center;
+}
+.ant-picker-range {
+  width: 22rem;
+  height: auto;
+  display: flex !important;
+  font-size: 20px;
+  border: none !important;
+  margin-left: -20px;
+}
+
+
+.ant-picker-input input {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.timerPicker {
+  position: relative;
+}
+.ant-picker-content {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  overflow: scroll;
+  top: 20;
+  left: 20;
+  bottom: 150px;
+  right: 90px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.ant-picker-time-panel-column {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196f3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.ant-btn-sm {
+  position: absolute;
+  top: 20;
+  left: 20;
+  bottom: 110px;
+  right: 90px;
+  border-radius: 10px;
+  color: rgb(50, 49, 49);
+  background: #ffffff;
+  /* display: none; */
+}
+.ant-btn-sm-active {
+  display: none;
+}
+.btnSubmit {
+  background: #143b89;
+  width: 200px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -2px;
+  right: -10rem;
+}
+
+.ant-picker-clear {
+  color: #005555;
+}
+
+.ant-picker-panel-has-range {
+  display: none;
+}
+
+.formInput .ant-form-item-required,
+.formInputs .ant-form-item-required {
+    background: #fff !important;
+    color: #000 !important;
+    margin-bottom: 5px;
+}
+
+.ant-picker-time-panel-cell-inner {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+.address .ant-form-item-required,
+.address {
+    margin-left: -50.8rem;
+}

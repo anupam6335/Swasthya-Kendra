@@ -94,7 +94,7 @@ body {
 
 .page-title{
   font-size: 25px;
-  color: rgba(0, 0, 0, 0.833);
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 .card-title{
@@ -310,16 +310,4 @@ label{
   color: rgb(255, 255, 255) !important;
   background: #223033 !important;
 
-}
-.ant-form-item{
-  margin: 10px 0 !important;
-  background: none !important;
-}
-.ant-picker-input input{
-  border: none !important;
-}
-.ant-picker{
-  border-radius: 2px !important;
-  border: 1px solid rgba(128, 128, 128, 0.521) !important;
-  height: 40px !important;
 }
