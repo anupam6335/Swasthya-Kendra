@@ -1,10 +1,22 @@
 import React from "react";
 import "./doctorFrom.css";
 import { Button, Col, Form, Input, Row, TimePicker } from "antd";
-
-const DoctorForm = ({onFinish}) => {
+import moment from "moment";
+const DoctorForm = ({ onFinish, initivalValues }) => {
   return (
-    <Form layout="vertical" onFinish={onFinish}>
+    <Form
+      layout="vertical"
+      onFinish={onFinish}
+      initialValues={{
+        ...initivalValues,
+        ...(initivalValues && {
+          timings: [
+            moment(initivalValues?.timings[0], "HH:mm"),
+            moment(initivalValues?.timings[1], "HH:mm"),
+          ],
+        }),
+      }}
+    >
       <h1 className="card-title mt-3">Personal Information</h1>
       <Row gutter={20} className="form-details">
         <Col span={8} xs={24} sm={24} className="formInput">

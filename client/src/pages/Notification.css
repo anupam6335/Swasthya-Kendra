@@ -62,6 +62,7 @@ hr.horizontal {
 
 .h4all{
   font-size: 17px;
+  cursor: pointer;
 }
 .ant-tabs-tabpane-active h3::before {
   content: "🤓";

@@ -22,11 +22,6 @@ const Layout = ({ children }) => {
       name: "Apply Doctor",
       path: "/apply-doctor",
       icon: "ri-send-plane-fill",
-    },
-    {
-      name: "Profile",
-      path: `/doctor/profile/${user?._id}`,
-      icon: "ri-account-circle-fill",
     }
   ];
 
