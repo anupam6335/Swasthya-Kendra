@@ -15,19 +15,19 @@ const Layout = ({ children }) => {
     },
     {
       name: "Appointments",
-      path: "/appointments",
+      path: "/doctor/appointments",
       icon: "ri-file-list-3-line",
     },
     {
-      name: "Profile",
+      name: "Apply Doctor",
       path: "/apply-doctor",
-      icon: "ri-account-circle-fill",
+      icon: "ri-send-plane-fill",
     },
     {
-      name: "Logout",
-      path: "/apply-doctor",
-      icon: "ri-logout-box-r-line",
-    },
+      name: "Profile",
+      path: `/doctor/profile/${user?._id}`,
+      icon: "ri-account-circle-fill",
+    }
   ];
 
   const doctorMenu = [
@@ -40,11 +40,6 @@ const Layout = ({ children }) => {
       name: "Appointments",
       path: "/doctor/appointments",
       icon: "ri-file-list-3-line",
-    },
-    {
-      name: "Apply Doctor",
-      path: "/apply-doctor",
-      icon: "ri-send-plane-fill",
     },
     {
       name: "Profile",

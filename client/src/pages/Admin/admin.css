@@ -1,0 +1,106 @@
+
+th {
+    width: 500px ;
+    background: #143B89;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ant-table-cell {
+    text-align: center;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.ant-table-cell div {
+
+}
+.ant-table-cell .anchor {
+    background: rgba(0, 0, 0, 0.719);
+    margin-left: 8.5rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 0.3s ease-in;
+}
+
+.ant-table-cell .anchor:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ant-table-row-level-0 {
+     background: #2e6a6580;
+     font-weight: 500;
+     cursor: pointer;
+}
+.ant-table-row-level-0:hover {
+    background: cadetblue;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.ant-table-cell .approve {
+    margin-left: 100px;
+}
+.ant-table-cell .block {
+    margin-left: 109px;
+}
+
+.ant-table-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: -4.5rem;
+}
+
+.ant-pagination-item-link {
+    cursor: pointer;
+}
+.ant-pagination-item-1 {
+    background-color: #1f4b47ca;
+    color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 120px;
+    font-size: 15px; 
+    font-weight: 700;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.ant-pagination-item-active a {
+    color: #000;
+
+}
+.ant-pagination-next {
+    color: #fff;
+    
+}
+.anticon-right {
+    font-size: 1.2rem;
+    color: #fff;
+    height: 20px;
+    width: 60px;
+   
+}
+
+.ant-pagination-disabled {
+    color: #fff;
+}
+
+.ant-pagination-item-link {
+    background: #4860d4;
+    color: #fff;
+    padding: 5px;   
+    width: 80px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.ant-pagination-item-link:hover {
+    background: #1F4B47;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.anticon-left {
+    font-size: 1.2rem;
+}
+
