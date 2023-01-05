@@ -30,15 +30,23 @@ const Home = () => {
   }, []);
 
   return (
-    <Layout>
-      <span className="layoutHeading"><span className="inner">👨‍⚕️ Available Doctors</span></span>
+    <Layout >
+      <span className="layoutHeading">
+        <span className="inner">👨‍⚕️ Available Doctors</span>
+      </span>
       <hr />
-      <Row className="gapBetween"> 
-        {doctors.map((doctor, idx) => (
-          <Col span={8} xs={24} sm={24} lg={8} key={idx}>
-            <Doctor doctor={doctor} />
-          </Col>
-        ))}
+      <Row className="gapBetween d-flex">
+        <div className="d-flex"> 
+          {doctors.map((doctor, idx) => (
+            <Col span={8} xs={24} sm={24} lg={8} key={idx}>
+              <Doctor doctor={doctor} />
+            </Col>
+          ))}
+        </div>
+
+        <div className="doctorsDiv">
+          <img src="/assets/doctors.svg" alt="doctors"  draggable='false' height='100%' width='550vh'/>
+        </div>
       </Row>
     </Layout>
   );

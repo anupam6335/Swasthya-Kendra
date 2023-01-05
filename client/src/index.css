@@ -315,3 +315,13 @@ label{
 .margin-left {
   margin-left: -105px;
 }
+
+.margin-right {
+  margin-left: 10px;
+}
+
+.doctorsDiv {
+  position: fixed;
+  margin-left: 680px;
+  /* z-index: -10; */
+}

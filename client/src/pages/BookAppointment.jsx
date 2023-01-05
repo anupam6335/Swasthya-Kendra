@@ -116,13 +116,15 @@ const BookAppointment = () => {
             <span className="inner">
               {doctor.firstName} {doctor.lastName}
             </span>
+            
+              
             <h1 className="normal-text timingsClass">
               <b>Timings :</b> {doctor.timings[0]} - {doctor.timings[1]}
             </h1>
           </span>
           <hr />
 
-          <Row>
+          <Row >
             <Col span={12} sm={24} xs={24} lg={8}>
               <div className="doctors-details">
                 <div>
@@ -165,7 +167,18 @@ const BookAppointment = () => {
                     )}
                   </div>
                 </div>
+                <Col span={8} sm={24} xs={24} lg={8}>
+              <img className="margin-right"
+              draggable='false'
+                src="/assets/booking.svg"
+                alt=""
+                width="100%"
+                height='400'
+
+              />
+            </Col>
                 <div className="doctors">
+                  
                   <p>
                     <b>Phone Number : </b>
                     {doctor.phoneNumber}

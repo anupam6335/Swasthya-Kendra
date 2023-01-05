@@ -1,12 +1,13 @@
 .doctors-details {
-  background: #7c9de1;
+  background: #7c9ee177;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
+  height: 65vh;
 }
 .headingDoctor {
   display: flex;
@@ -33,7 +34,7 @@
   align-items: center;
   justify-content: center;
   border: 2px solid white;
-  background: #5df758;
+  background: #5df7587b;
   border-radius: 10px;
 }
 

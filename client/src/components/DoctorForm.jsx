@@ -56,7 +56,7 @@ const DoctorForm = ({ onFinish, initivalValues }) => {
           <Form.Item
             required
             className="labelDetails"
-            label="Website"
+            label="Website / Email address"
             name="website"
             rules={[{ required: true }]}
           >
