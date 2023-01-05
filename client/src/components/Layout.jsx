@@ -59,11 +59,6 @@ const Layout = ({ children }) => {
       path: "/admin/doctorslist",
       icon: "ri-user-star-line",
     },
-    {
-      name: "Profile",
-      path: "/profile",
-      icon: "ri-account-circle-fill",
-    },
   ];
 
   const menuToBeRendered = user?.isAdmin

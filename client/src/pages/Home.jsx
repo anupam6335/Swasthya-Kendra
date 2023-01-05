@@ -35,8 +35,8 @@ const Home = () => {
         <span className="inner">👨‍⚕️ Available Doctors</span>
       </span>
       <hr />
-      <Row className="gapBetween d-flex">
-        <div className="d-flex"> 
+      <Row className="gapBetween d-flex ">
+        <div className="d-flex doctorssDiv flex-wrap"> 
           {doctors.map((doctor, idx) => (
             <Col span={8} xs={24} sm={24} lg={8} key={idx}>
               <Doctor doctor={doctor} />

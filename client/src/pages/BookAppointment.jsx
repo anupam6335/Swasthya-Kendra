@@ -45,7 +45,6 @@ const BookAppointment = () => {
     }
   };
   const checkAvailability = async () => {
-    console.log(date);
     try {
       dispatch(showLoading());
       const response = await axios.post(

@@ -321,7 +321,9 @@ label{
 }
 
 .doctorsDiv {
-  position: fixed;
+  margin-top: -45rem;
   margin-left: 680px;
-  /* z-index: -10; */
+}
+.doctorssDiv {
+  z-index: 999;
 }
