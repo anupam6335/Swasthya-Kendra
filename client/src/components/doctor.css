@@ -1,0 +1,55 @@
+.cards {
+    background: #16a084c7;
+    width:  320px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 15px;
+
+}
+.cards:hover {
+    background: #8d9095ee;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.cards-title {
+    color: #fff;
+    background: #065cddee;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 4px;
+}
+
+.gapBetween {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.specialization {
+    text-align: center;
+    font-size: 17px;
+}
+
+.layoutHeading {
+    font-size: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.inner {
+    padding: 20px;
+}
+
+.addressWrap {
+    overflow: scroll;
+}
+
+.headingDoctor {
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+}

@@ -79,6 +79,17 @@ const DoctorForm = ({ onFinish, initivalValues }) => {
       <hr />
       <h1 className="card-title mt-3">Professional Information</h1>
       <Row gutter={20} className="form-details">
+      <Col span={8} xs={24} sm={24} lg={8} className="formInputs">
+          <Form.Item
+            required
+            label="Timings"
+            name="timings"
+            rules={[{ required: true }]}
+            className="timerPicker labelDetails time"
+          >
+            <TimePicker.RangePicker format="HH:mm" />
+          </Form.Item>
+        </Col>
         <Col span={8} xs={24} sm={24} lg={8} className="formInput">
           <Form.Item
             required
@@ -90,6 +101,7 @@ const DoctorForm = ({ onFinish, initivalValues }) => {
             <Input className="inputDocs" placeholder="Specialization" />
           </Form.Item>
         </Col>
+       
         <Col span={8} xs={24} sm={24} lg={8} className="formInput ">
           <Form.Item
             required
@@ -120,17 +132,7 @@ const DoctorForm = ({ onFinish, initivalValues }) => {
             />
           </Form.Item>
         </Col>
-        <Col span={8} xs={24} sm={24} lg={8} className="formInputs">
-          <Form.Item
-            required
-            label="Timings"
-            name="timings"
-            rules={[{ required: true }]}
-            className="timerPicker labelDetails time"
-          >
-            <TimePicker.RangePicker format="HH:mm" />
-          </Form.Item>
-        </Col>
+        
       </Row>
 
       <div className="d-flex justify-content-end">
