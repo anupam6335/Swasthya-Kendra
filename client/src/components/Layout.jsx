@@ -50,6 +50,11 @@ const Layout = ({ children }) => {
       icon: "ri-ancient-gate-fill",
     },
     {
+      name: "Appointments",
+      path: "/appointments",
+      icon: "ri-file-list-3-line",
+    },
+    {
       name: "Users",
       path: "/admin/userslist",
       icon: "ri-team-fill",

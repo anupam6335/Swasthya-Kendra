@@ -30,7 +30,8 @@ const Home = () => {
   }, []);
 
   return (
-    <Layout >
+    <Layout>
+      <div className='homeBody'>
       <span className="layoutHeading">
         <span className="inner">👨‍⚕️ Available Doctors</span>
       </span>
@@ -48,6 +49,7 @@ const Home = () => {
           <img src="/assets/doctors.svg" alt="doctors"  draggable='false' height='100%' width='550vh'/>
         </div>
       </Row>
+      </div>
     </Layout>
   );
 };
