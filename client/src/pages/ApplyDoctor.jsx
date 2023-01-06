@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { showLoading, hideLoading } from "../redux/alertsSlice";
 import { toast } from "react-hot-toast";
 import axios from "axios";
-
+import moment from 'moment'
 const ApplyDoctor = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
@@ -19,6 +19,10 @@ const ApplyDoctor = () => {
         {
           ...values,
           userId: user._id,
+          timings: [
+            moment(values.timings[0]).format("HH:mm"),
+            moment(values.timings[1]).format("HH:mm"),
+          ],
         },
         {
           headers: {
