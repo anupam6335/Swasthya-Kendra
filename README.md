@@ -52,9 +52,6 @@ Insert gif or link to demo
 ### Home page
 ![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Home.png)
 
-### register page
-![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Appointment%202.png)
-
 ### Appointment page
 ![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Appointment%202.png)
 
