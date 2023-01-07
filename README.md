@@ -43,7 +43,44 @@ Insert gif or link to demo
 
 ## Screenshots
 
-![App Screenshot](https://tinyurl.com/bdz7zwc8)
+### register page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/register.png)
+
+### Login page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/login.png)
+
+### Home page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Home.png)
+
+### register page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Appointment%202.png)
+
+### Appointment page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Appointment%202.png)
+
+### Book now page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/book%20now.png)
+
+### User Appointment page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/user%20appointment.png)
+
+### Notifications page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Notifications%20page.png)
+
+### Doctor Appointment page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Doctor.png)
+
+### Doctor Apply page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/apply%20doctor.png)
+
+### Doctor Profile page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/doctors%20profile%20page.png)
+
+### Admin user page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Admin%20user%20page.png)
+
+### Admin Doctors page
+![Register](https://github.com/anupam6335/Swasthya-Kendra/blob/main/website%20images/Admin%20Doctors%20page.png)
 
 
 ## Tech stack used in the project
